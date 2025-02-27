@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anyify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="regular_classes.css">
+    <link rel="shortcut icon" href="Svg/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container flex">
+        <div class="hamburger-left left style">
+            <div class="home bg-grey rounded m-1">
+                <ul class="menu">
+                    <div class="hamslide space-between">
+                        <li class="logo"><img src="Svg/logo.svg" alt="logo"></li>
+                        <li class="close"><img src="Svg/close.svg" alt=""></li>
+                    </div>
+                    <li><img src="Svg/Home.svg" alt="home">Home</li>
+                    <li class="search"><img src="Svg/search.svg" alt="search">Search</li>
+                </ul>
+            </div>
+            <div class="library bg-grey">
+                <div class="head">
+                    <ol class="space-between">
+                        <li class="color-grey"><img src="Svg/library.svg" alt="library">Your Library</li>
+                        <li class="plus"><img src="Svg/plus.svg" alt="plus"></li>
+                    </ol>
+                </div>
+                <div class="list">
+                    <ol class="songs-by-name scroll-container">
+                    </ol>
+                </div>
+                <div class="footer">
+                    <div class="grid">
+                        <a class="align" href="https://www.spotify.com/in-en/legal/">Legal</a>
+                        <a class="align" href="https://www.spotify.com/in-en/privacy/">Privacy Center</a>
+                        <a class="align" href="https://www.spotify.com/in-en/legal/privacy-policy/">Privacy Policy</a>
+                        <a class="align" href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookies</a>
+                        <a class="align" href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">About Ads</a>
+                        <a class="align" href="https://www.spotify.com/in-en/accessibility/">Accessibility</a>
+                        <a class="align" href="https://www.spotify.com/legal/cookies-policy/">Cookies</a>
+                    </div>
+                    <button class="footer-button" type="button">English</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="right">
+            <div class="header" style="margin: 0px;">
+                <ul class="space-between" style="margin: 0px;">
+                    <li class="hamburger"><img src="Svg/hamburger.svg" alt="hamburger"></li>
+                    <li><img class="left-arrow" src="Svg/left.svg" alt="left">
+                        <img class="right-arrow" src="Svg/right.svg" alt="right">
+                    </li>
+                    <li><button class="Sign-button button" type="button">Sign up</button>
+                        <button class="log-button button" type="button">Log in</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="albums scroll-container">
+                <h2 class="main-heading">Spotify Playlists</h2>
+                <div class="songs-cards flex align" style="padding-top: 20px;">
+                    <!-- <div class="card rounded ">
+                        <img class="thumbnail" src="https://i.scdn.co/image/ab67706f000000024c4ae64d4ed1fa93a1b886ca"
+                            alt="thumbnail">
+                        <h4>Today's top hits</h4>
+                        <p>Tylor Swift is on top of the hottest 50!</p>
+                        <img class="play" src="Svg/play.svg" alt="play">
+                    </div>
+                    <div class="card rounded ">
+                        <img class="thumbnail" src="https://i.scdn.co/image/ab67706f000000024c4ae64d4ed1fa93a1b886ca"
+                            alt="thumbnail">
+                        <h4>Today's top hits</h4>
+                        <p>Tylor Swift is on top of the hottest 50!</p>
+                        <img class="play" src="Svg/play.svg" alt="play">
+                    </div> -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="player">
+        <div class="other">
+            <div class="seekbar">
+                <div class="circle"></div>
+            </div>
+        </div>
+        <div class="other-details">
+            <div class="artist-details">
+                <div class="music-name"></div>
+                <div class="singer-name"></div>
+            </div>
+            <div class="player_buttons flex ">
+                <img id="previous" class="player_playbutton" src="Svg/backword_step.svg" alt="">
+                <img id="play" src="Svg/player_button.svg" alt="">
+                <img id="next" src="Svg/forword_step.svg" alt="">
+            </div>
+            <div class="flex column">
+                <div class="duration opacity">
+                </div>
+                <div class="volume flex invert">
+                    <img id="level" src="Svg/volume_L3.svg" alt="">
+                    <input type="range" id="drag" min="0" max="100" value="100" step="1">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
